@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style type="text/css">
+
+        body{
+            height:100%;
+            margin:0;
+            font-size:16px;
+            font-family:"Lato", sans-serif;
+            font-weight:400;
+            line-height:1.8em;
+            background-color: #E8EDDF;
+            color:#242423;
+        }
+
+        body.dark{
+            background-color: #242423;
+            color:#E8EDDF;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            
+            overflow: hidden;
+            
+            margin: 0px 100px;
+            z-index: 3;
+            position: absolute;
+            width: 85%;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a{
+            float: left;
+            display: block;
+            color: #242423;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            margin-left: 35px;
+        }
+
+        .navbar a.right {
+            float: right;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #242423;
+        }
+
+        .pimg1 {
+            position:relative;
+            opacity: 0.65;
+            background-position:center;
+            background-size:cover;
+            background-repeat:no-repeat;
+
+            background-attachment:fixed;
+            background-image:url("./images/School.jpg");
+            min-height: 100vh;
+        }
+
+
+        .ptext{
+            position:absolute;
+            top:35%;
+            width:93%;
+            margin-left: 7%;
+            text-align: left;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 140px;
+            line-height: 110px;
+
+        }
+
+        .ptext .border{
+            padding:20px;
+            background-color:transparent;
+        }
+
+        .ptext .border.trans{
+            background-color:transparent;
+        }
+
+
+        /* Flexbox */
+
+        .container {
+            display: flex;
+            flex-flow: column wrap;
+            padding: 50px;
+            height: 45vw;
+            align-content: space-around;
+        }
+
+        .command {
+            flex: 0.5;
+        }
+
+        .grph {
+            flex-basis: 100%;
+            order: 1;
+            margin-left: 25px;
+            background-color: none;
+            padding: 0px;
+            max-width: 30%;
+            
+        }
+
+        .write {
+            flex: 1;
+            
+            margin-bottom: 25px;
+        }
+
+        .box {
+            padding: 20px;
+            
+            margin-bottom: 25px;
+        }
+
+        #body-img{
+            background-position:center;
+            background-size:cover;
+            background-repeat:no-repeat;
+
+            background-image:url("./images/kids.jpg");
+        }
+
+        .footer{
+            background-color: #242423;
+            color: #ffffff;
+            width: 97%;
+            margin-bottom: 0px;
+            padding: 2px 20px 2px 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <input type="checkbox" class="right" id="light-dark" class="right" style="margin-top: 30px;">Light/Dark</a>
+        <a href="contact.html" class="right">Contact Us</a>
+        <a href="students.html" class="right">Students</a>        
+        
+        <a href="home.html" class="right">Home</a>
+    </div>          
+      
+    <div class="pimg1">
+          
+    </div>
+    <div class="ptext">
+        <span class="border">
+            <b>WESTLEAF HIGH</b>
+        </span>
+        <br>
+        <span class="border" style="font-size: 86px;">
+            Discover your purpose
+        </span>
+    </div>
+
+    <div class="container" id="cmd">
+        <div class="container grph columns" class="box">
+            <div class="command box">
+
+                <h2>
+                    THE WESTLEAF EXPERIENCE
+                </h2>
+
+                <p>Let our students tell you what it’s like to live and learn on a campus designed to build community, inspire, and challenge.</p>
+
+            </div>
+            <div id="body-img" class="box write"></div>
+        </div>
+
+        <div class="container grph columns" class="box">
+            <div class="command box" style="background-color: #F5CB5C;">"A vital lesson I learnt at westleaf high was that impact is not only a story of success and idealism but also one of relentlessness, sensitivity, and the wisdom to let go." -Alisha '17 
+            </div>
+            <div class="box write" style="background-color: #FFB4A2;">"The teachers I am closest to are like my parents here. Although it is great living with friends your own age, sometimes you need to talk to someone who has come a longer way, and can provide a nuanced perspective about everything – from personal crises to communism!" -random bacche ka naam
+            </div>
+        </div>
+        
+        <div class="container grph columns" class="box">
+            <div class="box write" style="background-color: #FFCDB2;">"A vital lesson I learnt at westleaf high was that impact is not only a story of success and idealism but also one of relentlessness, sensitivity, and the wisdom to let go." -Alisha '17</div>
+            <div class="command box" style="background-color: #E5989B;">"The teachers I am closest to are like my parents here. Although it is great living with friends your own age, sometimes you need to talk to someone who has come a longer way, and can provide a nuanced perspective about everything – from personal crises to communism!" -random bacche ka naam
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>@Copyright 2022, THE WESTLEAF School, New Delhi. Designed and developed by the IT team. </p>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
